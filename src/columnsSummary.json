@@ -1,0 +1,22 @@
+[
+  {
+    "header": "",
+    "accessor": "icon-category",
+    "param": { "width": "8%" }
+  },
+  {
+    "header": "Note Category",
+    "accessor": "category",
+    "param": { "width": "42%" }
+  },
+  {
+    "header": "Active",
+    "accessor": "active",
+    "param": { "width": "25%" }
+  },
+  {
+    "header": "Archived",
+    "accessor": "archived",
+    "param": { "width": "25%" }
+  }
+]

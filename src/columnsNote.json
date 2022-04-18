@@ -1,0 +1,47 @@
+[
+  {
+    "header": "",
+    "accessor": "icon-category",
+    "param": { "width": "8%" }
+  },
+  {
+    "header": "Name",
+    "accessor": "name",
+    "param": { "width": "12%" }
+  },
+  {
+    "header": "Craeted",
+    "accessor": "craeted",
+    "param": { "width": "14%" }
+  },
+  {
+    "header": "Category",
+    "accessor": "category",
+    "param": { "width": "12%" }
+  },
+  {
+    "header": "Content",
+    "accessor": "content",
+    "param": { "width": "22%" }
+  },
+  {
+    "header": "Dates",
+    "accessor": "dates",
+    "param": { "width": "19%" }
+  },
+  {
+    "header": "",
+    "accessor": "icon-edit",
+    "param": { "width": "5%" }
+  },
+  {
+    "header": "",
+    "accessor": "icon-in_archive",
+    "param": { "width": "5%" }
+  },
+  {
+    "header": "",
+    "accessor": "icon-delete",
+    "param": { "width": "5%" }
+  }
+]
