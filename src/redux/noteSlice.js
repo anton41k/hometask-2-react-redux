@@ -13,13 +13,13 @@ const noteSlice = createSlice({
       state.notes = [payload, ...state.notes];
     },
     removeNote(state, { payload }) {
-      state.notes = state.notes.filter((note) => note.id !== payload.id);
+      state.notes = state.notes.filter(({ id }) => id !== payload);
     },
     toggleNoteArchived(state, { payload }) {
-      const note = state.notes.find(({ id }) => id === payload.id);
+      const note = state.notes.find(({ id }) => id === payload);
       note.archived = !note.archived;
     },
-    editNote(state, { payload }) {
+    editNoteArchived(state, { payload }) {
       const note = state.notes.find(({ id }) => id === payload.id);
       note.name = payload.name;
       note.content = payload.content;
@@ -35,7 +35,7 @@ export const {
   addNote,
   removeNote,
   toggleNoteArchived,
-  editNote,
+  editNoteArchived,
   toggleNotesIsArchived,
 } = noteSlice.actions;
 

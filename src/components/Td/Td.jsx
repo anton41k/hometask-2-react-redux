@@ -2,7 +2,7 @@ import Notiflix from "notiflix";
 import { useDispatch } from "react-redux";
 
 import {
-  editNote,
+  editNoteArchived,
   removeNote,
   toggleNoteArchived,
 } from "../../redux/noteSlice";
@@ -42,21 +42,20 @@ const Td = ({ row, column, idx }) => {
   });
 
   const handelEditNote = ({ name, content, category }) => {
-    console.log(name, content, category);
     const dataEditingNote = {
       id: row.id,
       name,
       content,
       category,
     };
-    dispatch(editNote(dataEditingNote));
+    dispatch(editNoteArchived(dataEditingNote));
     Notiflix.Notify.info(`Edited note "${name}"!`);
     handelToggleModal();
   };
 
   const handleToggleArchive = () => {
     const note = row;
-    dispatch(toggleNoteArchived(note));
+    dispatch(toggleNoteArchived(note.id));
     const nameNote = note.name;
     const message = note.archived
       ? `Note, "${nameNote}" out archived!!!`
@@ -67,7 +66,7 @@ const Td = ({ row, column, idx }) => {
 
   const handleRemoveNote = () => {
     const note = row;
-    dispatch(removeNote(note));
+    dispatch(removeNote(note.id));
     handelToggleModal();
     Notiflix.Notify.info(`Removed note "${row.name}"!`);
   };
