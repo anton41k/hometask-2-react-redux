@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hometask-2-react-redux/static/css/main.9a2931f3.css",
+    "main.js": "/hometask-2-react-redux/static/js/main.55c03bd5.js",
+    "static/media/sprite.svg": "/hometask-2-react-redux/static/media/sprite.102946801eb18f2c3966fd4da98fc310.svg",
+    "index.html": "/hometask-2-react-redux/index.html",
+    "static/media/close.svg": "/hometask-2-react-redux/static/media/close.efeb16dadb2dc83929524d1bbb7f6dcd.svg",
+    "main.9a2931f3.css.map": "/hometask-2-react-redux/static/css/main.9a2931f3.css.map",
+    "main.55c03bd5.js.map": "/hometask-2-react-redux/static/js/main.55c03bd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a2931f3.css",
+    "static/js/main.55c03bd5.js"
+  ]
+}
